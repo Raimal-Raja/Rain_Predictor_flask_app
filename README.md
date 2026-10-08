@@ -2,14 +2,13 @@
 
 Flask weather-input application serving rainfall predictions from a serialized machine-learning model.
 
-## Repository guide
+## Setup and repository reference
 
-### Contents
+### Project structure
 
 - [Dockerfile](Dockerfile)
 - [LICENSE](LICENSE)
 - [Procfile](Procfile)
-- [README.md](README.md)
 - [Static](Static)
 - [app.py](app.py)
 - [first.png](first.png)
@@ -53,11 +52,15 @@ Regression tests use a mock predictor. Full inference still requires the seriali
 
 ### Validation
 
-Reviewed on 2026-10-08. Two regression tests passed with unittest. Python source syntax checks passed. See tests/ for the tested behavior.
+Audit: 2026-10-08. Repository structure, setup instructions and description were reviewed. 2 existing Python files passed syntax checks; changed files and new regression tests were checked separately. 2 regression tests passed. Syntax checks do not establish full runtime correctness. External APIs, live scraping, GUI interaction, notebook training and production deployment were not comprehensively exercised.
 
 ```bash
 python -m unittest discover -s tests -v
 ```
+
+### Repository description
+
+The short GitHub description is provided in [REPOSITORY_DESCRIPTION.md](REPOSITORY_DESCRIPTION.md).
 
 ### Contributions
 
